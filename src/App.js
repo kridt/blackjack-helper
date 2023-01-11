@@ -13,10 +13,18 @@ function App() {
   console.log(deck);
   return (
     <div className="App">
-      <p>123123</p>
-      {deck?.map((card) => {
-        return <PlayingCard cardValue={card.rank} cardImg={card.img} />;
-      })}
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(13, 1fr)",
+          gap: "1em",
+          scale: "0.5",
+        }}
+      >
+        {deck?.map((card) => {
+          return <PlayingCard cardValue={card.rank} cardImg={card.img} />;
+        })}
+      </div>
     </div>
   );
 }
