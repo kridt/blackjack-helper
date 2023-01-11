@@ -8,6 +8,7 @@ export default function PlayingCard({ cardValue, cardImg }) {
     <div>
       <h1>This is a playingCard</h1>
       <p>{cardValue}</p>
+    <p>{cardImg}</p>
     </div>
   );
 }
